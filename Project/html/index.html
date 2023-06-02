@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> NASDAQ Stock Prices</title>
+  <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #002D62; 
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color:#ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #08710d;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1> NASDAQ Stock Price Search</h1>
+    <form action="search" method="get">
+      <input id="description" name="query" type="text" placeholder="Enter stock ticker">
+      <input type="submit" value="Search">
+    </form>
+    <footer>
+      <p>This program allows you to search for NASDAQ stock prices by entering the stock ticker. It provides an easy way to retrieve up-to-date stock information and make informed investment decisions.</p>
+      <p> Upon getting the data, you will be welcomed with a cute dog picutre. :) </p>
+    </footer>
+  </div>
+</body>
+</html>
